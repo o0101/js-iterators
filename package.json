@@ -1,0 +1,25 @@
+{
+  "name": "js-iterators",
+  "version": "1.0.1",
+  "description": "Ruby range iterators in JavaScript using syntax hacks",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node -r esm src/test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i5ik/js-iterators.git"
+  },
+  "keywords": [
+    "ruby",
+    "javascript",
+    "iterator",
+    "range"
+  ],
+  "author": "@dosy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/i5ik/js-iterators/issues"
+  },
+  "homepage": "https://github.com/i5ik/js-iterators#readme"
+}
