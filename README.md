@@ -59,6 +59,7 @@ Cool
 - Right-closed (inclusive end, e.g., [1,3] === 1, 2, 3) intervals use $
 - Right-open (non-inclusive end, e.g., [1,3) === 1, 2) intervals use _
 - Only 1 dot separating left and right parts when left part is:
+  - a negative number (which must be wrapped in `(` and `)`), e.g. Array.from((-10)._20)
   - a floating point number with decimal places, e.g. [...3.1415._10]
   - a variable, e.g. [...Math.PI._10]
   - an octal, e.g. [...0701._500]
