@@ -1,6 +1,6 @@
 {
   "name": "js-iterators",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Ruby range iterators in JavaScript using syntax hacks",
   "main": "src/index.js",
   "scripts": {
