@@ -1,6 +1,6 @@
 # js-iterators (zero dependencies)
 
-Ruby style iterators in JS
+Ruby style iterators in JS. Ruby style ranges in JS
 
 ```js
 
