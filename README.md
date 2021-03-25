@@ -1,4 +1,4 @@
-# js-iterators
+# js-iterators (zero dependencies)
 
 Ruby style iterators in JS
 
@@ -48,3 +48,33 @@ Syntax
 # why this?
 
 Cool
+
+# Guide
+
+- `<left_part><1 or 2 dots><right_part>`
+- Left part must be a Number
+- Right part must start with _ or $ then be followed by a number
+- Negative numbers on left wrap in ()
+- Negative numbers on right prefix with extra _
+- Right-closed (inclusive end, e.g., [1,3] === 1, 2, 3) intervals use $
+- Right-open (non-inclusive end, e.g., [1,3) === 1, 2) intervals use _
+- Only 1 dot separating left and right parts when left part is:
+  - a floating point number with decimal places, e.g. [...3.1415._10]
+  - a variable, e.g. [...Math.PI._10]
+  - an octal, e.g. [...0701._500]
+  - a binary, e.g. [...0b101011._500]
+  - a hexadecimal, e.g. [...0xfa._500]
+  - a scientific-notation, e.g. [...1e3._1010]
+- Otherwise, two dots separating left and right parts
+
+
+- Ruby API
+  - `<range>.to_a` send range to an array, e.g. 1.._10.to_a
+  - `<number>.upto(high)` count up from number to high inclusive by 1s (or -1s)
+  - `<number>.downto(low)` count down from number to low inclusive by 1s (or -1s)
+  - `<number>.step(to, by)` count from number to `to` inclusive by `by`s (or -`by`s)
+  - `<number>.times` iterate number times (and return integers 0..number-1)
+  - Ruby API is based on [Ruby range](https://ruby-doc.org/core-2.5.1/Range.html) and [Ruby number iterators](https://www.dotnetperls.com/iterator-ruby)
+
+
+

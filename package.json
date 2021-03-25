@@ -4,7 +4,8 @@
   "description": "Ruby range iterators in JavaScript using syntax hacks",
   "main": "src/index.js",
   "scripts": {
-    "test": "node -r esm src/test/index.js"
+    "test": "node -r esm src/test/index.js",
+    "browser-test": "serve -p 8080"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/i5ik/js-iterators/issues"
   },
-  "homepage": "https://github.com/i5ik/js-iterators#readme"
+  "homepage": "https://github.com/i5ik/js-iterators#readme",
+  "devDependencies": {
+    "esm": "^3.2.25",
+    "serve": "^11.3.2"
+  }
 }
