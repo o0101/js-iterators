@@ -1,4 +1,4 @@
-# js-iterators (zero dependencies)
+# js-iterators (zero dependencies) ![npm](https://img.shields.io/npm/dt/js-iterators)
 
 Ruby style iterators in JS. Ruby style ranges in JS
 
